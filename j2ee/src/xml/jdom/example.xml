@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books[
+<!ELEMENT books (book)*>
+<!ELEMENT book (name,price)>
+<!ATTLIST book
+    id CDATA #IMPLIED
+    hot CDATA #IMPLIED>
+]>
+<books>
+	<book id="12" hot="true">
+		<name>王五</name>
+		<price>50.0</price>
+	</book>
+	<book id="15">
+		<name>Spring in Action</name>
+		<price>39.0</price>
+	</book>
+</books>

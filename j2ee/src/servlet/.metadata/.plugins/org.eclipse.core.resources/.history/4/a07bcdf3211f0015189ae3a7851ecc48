@@ -1,0 +1,18 @@
+package creational.abstract_factory;
+
+public class MazeFactory
+{
+	public Maze makeMaze()
+	{
+		return new Maze();
+	}
+
+	public Wall makeWall()
+	{
+
+	}
+
+	public Room makeRoom();
+
+	public Door makeDoor();
+}

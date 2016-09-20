@@ -1,0 +1,6 @@
+package behavioral.command;
+
+public class Client
+{
+	RemoteInvoker invoker = new RemoteInvoker();
+}

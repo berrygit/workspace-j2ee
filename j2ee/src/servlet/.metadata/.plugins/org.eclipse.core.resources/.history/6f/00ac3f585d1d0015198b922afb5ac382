@@ -1,0 +1,18 @@
+import java.util.Date;
+
+public class NodeTest
+{
+	public static void main(String[] args)
+	{
+		int n = 100000000;
+		int a = 0;
+		int b = 0;
+		int x = 0;
+		System.out.println(new Date());
+		for (int i = 0; i < n; i++)
+		{
+			x = a + b;
+		}
+		System.out.println(new Date());
+	}
+}

@@ -1,0 +1,78 @@
+<CommonBaseEvent creationTime="2015-06-19T11:33:06.254748Z" globalInstanceId="A583FDF20003E3151644FB6F164F34CE" msg="Native file server started listening on port 10005" severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="ClientCTL.c, line 606" instanceId="1004" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Client Compatibility TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:33:07.569779Z" globalInstanceId="A583FDF30008B1AE11C2EA870216A75E" msg="Received PUT_FILE command from client" severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="RACmdHandlers.c, line 875" instanceId="1004" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Client Compatibility TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:33:07.611146Z" globalInstanceId="A583FDF30009534453BA093B451DB2E0" msg="Received PUT_FILE command from client" severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="RACmdHandlers.c, line 875" instanceId="1004" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Client Compatibility TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:33:08.659096Z" globalInstanceId="A583FDF4000A0E92456C9A91715D5F85" msg="CONSOLE LAUNCHED COMMAND for connection(5001). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:33:11.251897Z" globalInstanceId="A583FDF70003D7F2679D5E880F23B369" msg="CCTL Scrubbing process 16106 -- Either process exited normally (handleProcessExitEvent), was found to be inactive/not exist (scrubAllProcesses), or was killed by the client (killProcess)" severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="RACClientSupport.c, line 506" instanceId="1004" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Client Compatibility TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:33:24.250587Z" globalInstanceId="A583FE040003D2D535A8AE2E77A5F0CC" msg="CONSOLE LAUNCHED COMMAND for connection(5003). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:33:57.886502Z" globalInstanceId="A583FE25000D86E247582E036BD017A1" msg="CONSOLE LAUNCHED COMMAND for connection(5007). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:36:39.930786Z" globalInstanceId="A583FEC7000E33DA57CC7C1D7A46B9E3" msg="CONSOLE LAUNCHED COMMAND for connection(5011). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:37:39.966697Z" globalInstanceId="A583FF03000EC02326714BDB23385AAE" msg="CONSOLE LAUNCHED COMMAND for connection(5015). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T11:42:49.233915Z" globalInstanceId="A5840039000391B46A2F99EB0E2A79C7" msg="CONSOLE LAUNCHED COMMAND for connection(5019). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T12:01:42.004738Z" globalInstanceId="A58404A60000127A083B51A07EAC7FCD" msg="CONSOLE LAUNCHED COMMAND for connection(5023). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T12:10:58.109086Z" globalInstanceId="A58406D20001AA195EBF67A5038AA300" msg="CONSOLE LAUNCHED COMMAND for connection(5027). " severity="10" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="NamedPipeListener.c, line 590" instanceId="1002" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Named Pipe TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2015-06-19T12:16:16.193837Z" globalInstanceId="A58408100002F525448DDE475D23791C" msg="Agent Controller shutdown requested through ACTL" severity="30" version="1.0.1">
+	<sourceComponentId component="AgentController" componentIdType="TPTPComponent" executionEnvironment="ACTLServer.c, line 376" instanceId="1005" location="berry-K42JZ" locationType="IPV4" processId="16062" subComponent="Agent Compatibility TL" threadId="16062" componentType="Eclipse_TPTP"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>

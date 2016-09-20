@@ -1,0 +1,11 @@
+package maze;
+
+public class MazeWithRecursion
+{
+	int[][] maze = {{}
+	{}
+	{}
+	{}
+	{}
+	};
+}

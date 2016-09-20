@@ -1,0 +1,6 @@
+2016-06-10 21:57:25  [ main:1 ] - [ INFO ]  what happens?
+java.lang.NullPointerException: null pointer happen!
+	at log4j1.throwable.ThreableLog.main(ThreableLog.java:11)
+2016-06-10 21:58:30  [ main:1 ] - [ INFO ]  what happens?
+java.lang.NullPointerException: null pointer happen!
+	at log4j1.throwable.ThrowableLog.main(ThrowableLog.java:11)

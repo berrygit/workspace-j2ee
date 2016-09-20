@@ -1,0 +1,7 @@
+1432864992131	Rename package 'ftpTools'
+1432865157449	Delete element
+1432865231874	Delete element
+1432865592568	Delete element
+1432894114254	Change method 'connect'
+1432894356487	Pull up members to 'FTPToolsInterface'
+1432894468449	Encapsulate field 'isSurportRedo'

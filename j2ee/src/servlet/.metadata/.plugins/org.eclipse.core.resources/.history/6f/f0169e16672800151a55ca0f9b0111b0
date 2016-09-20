@@ -1,0 +1,119 @@
+public class NodeTest
+{
+	public static void main(String[] args)
+	{
+		int[] numbers =
+		{ 31, -41, 59, 26, -53, 58, 97, -93, -23, 84 };
+
+		Node node = new NodeTest().getSum(numbers, 0, numbers.length - 1);
+
+		// System.out.println(node.getValue());
+		// System.out.println(node.getBegin());
+		// System.out.println(node.getEnd());
+
+	}
+
+	public void getSum(int[] numbers)
+	{
+		int tempSum = 0;
+		int sum = 0;
+		int end = 0;
+
+		for (int i = 0; i < numbers.length; i++)
+		{
+			tempSum += numbers[i];
+
+			if (tempSum > sum)
+			{
+				sum = tempSum;
+				end = i;
+			}
+		}
+
+		tempSum = sum;
+		int begin = 0;
+		for (int j = 0; j <= end; j++)
+		{
+			tempSum -= numbers[j];
+			if (tempSum > sum)
+			{
+				sum = tempSum - numbers[j];
+				begin = j;
+			}
+		}
+
+		System.out.println(sum);
+		System.out.println(begin);
+		System.out.println(end);
+
+	}
+
+	public Node getSum(int[] numbers, int begin, int end)
+	{
+		if (begin < end)
+		{
+			int mid = (begin + end) / 2;
+			Node lowSum = getSum(numbers, begin, mid);
+			Node highSum = getSum(numbers, mid + 1, end);
+			Node cross = getSumCross(numbers, begin, end, mid);
+
+			if ((cross.getValue() >= lowSum.getValue())
+					&& (cross.getValue() >= highSum.getValue()))
+			{
+				return cross;
+			}
+			else if ((lowSum.getValue() >= cross.getValue())
+					&& (lowSum.getValue() >= highSum.getValue()))
+			{
+				return lowSum;
+			}
+			else
+			{
+				return highSum;
+			}
+
+		}
+		else if (begin == end)
+		{
+			return new Node(begin, begin, numbers[begin]);
+		}
+
+		// if it first use right,this situation will never happen
+		return null;
+	}
+
+	private Node getSumCross(int[] numbers, int begin, int end, int mid)
+	{
+		int rightSum = Integer.MIN_VALUE;
+		int rightSumTemp = 0;
+		int right = mid + 1;
+
+		for (int i = mid + 1; i <= end; i++)
+		{
+			rightSumTemp += numbers[i];
+
+			if (rightSumTemp > rightSum)
+			{
+				rightSum = rightSumTemp;
+				right = i;
+			}
+		}
+
+		int leftSum = Integer.MIN_VALUE;
+		int leftSumTemp = 0;
+		int left = mid;
+
+		for (int i = mid; i >= begin; i--)
+		{
+			leftSumTemp += numbers[i];
+
+			if (leftSumTemp > leftSum)
+			{
+				leftSum = leftSumTemp;
+				left = i;
+			}
+		}
+
+		return new Node(left, right, leftSum + rightSum);
+	}
+}

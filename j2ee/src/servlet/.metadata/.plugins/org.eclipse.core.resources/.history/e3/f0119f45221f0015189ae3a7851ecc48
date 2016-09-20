@@ -1,0 +1,54 @@
+package creational.abstract_factory;
+
+public class EnchantedMazeFactory extends MazeFactory
+{
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see creational.abstract_factory.MazeFactory#makeMaze()
+	 */
+	@Override
+	public Maze makeMaze()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see creational.abstract_factory.MazeFactory#makeWall()
+	 */
+	@Override
+	public Wall makeWall()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see creational.abstract_factory.MazeFactory#makeRoom()
+	 */
+	@Override
+	public Room makeRoom()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see creational.abstract_factory.MazeFactory#makeDoor()
+	 */
+	@Override
+	public Door makeDoor()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

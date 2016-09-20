@@ -1,0 +1,10 @@
+package maximum_subarray;
+
+public class Maximum_subarray
+{
+	private MaxInfo findMaximumSubarray(int[] array, int begin, int end)
+	{
+		if (end > begin)
+
+	}
+}

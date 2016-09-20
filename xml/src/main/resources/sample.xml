@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xmlns指定beans标签下xml默认的namespace -->
+<!-- xmlns:xsi指定标签规范，xsi属于w3c自己定义的namespace -->
+<!-- xmlns:context是我们自己定义的namespace的key的配置 -->
+<!-- xsi:schemaLocation以key value形式给出上面定义的namespace的能写哪些标签的规范，规范就是value对应的网络上的xsd文件 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+</beans>

@@ -1,0 +1,85 @@
+package maximum_subarray;
+
+public class Maximum_subarray
+{
+	static int[] numbers =
+	{ 17, 63, 43, 64, 58, 54, 97, 65, 7, 2, 65, 67, 95, 34, 5, 976, 465, 35,
+			34, 64, 34, 643, 15, 23, 1, 46, 32, 35, 345, 23, 9, 4, 62, 234, 77 };
+
+	public static void main(String[] args)
+	{
+		int[] unberDealArray = new int[numbers.length - 1];
+
+		for (int i = 0; i < unberDealArray.length; i++)
+		{
+			unberDealArray[i] = numbers[i + 1] - numbers[i];
+		}
+		
+		findMaximumSubarray
+	}
+
+	private MaxInfo findMaximumSubarray(int[] array, int begin, int end)
+	{
+		if (end == begin)
+		{
+			return new MaxInfo(begin, end, array[begin]);
+		}
+		else
+		{
+			int mid = (begin + end) / 2;
+			MaxInfo leftMax = findMaximumSubarray(array, begin, mid);
+			MaxInfo rightMax = findMaximumSubarray(array, mid + 1, end);
+			MaxInfo crossMax = findMaximumCrossSubarray(array, begin, mid, end);
+
+			if (leftMax.getMax_sum() >= rightMax.getMax_sum()
+					&& leftMax.getMax_sum() >= crossMax.getMax_sum())
+			{
+				return leftMax;
+			}
+			else if (rightMax.getMax_sum() >= leftMax.getMax_sum()
+					&& rightMax.getMax_sum() >= crossMax.getMax_sum())
+			{
+				return rightMax;
+			}
+			else
+			{
+				return crossMax;
+			}
+		}
+
+	}
+
+	private MaxInfo findMaximumCrossSubarray(int[] array, int begin, int mid,
+			int end)
+	{
+		int leftSum = Integer.MIN_VALUE;
+		int leftLocation = mid;
+		int sum = 0;
+
+		for (int i = mid; i >= begin; i--)
+		{
+			sum = sum + array[i];
+			if (sum > leftSum)
+			{
+				leftSum = sum;
+				leftLocation = i;
+			}
+		}
+
+		int rightSum = Integer.MIN_VALUE;
+		int rightLocation = mid;
+		sum = 0;
+
+		for (int i = mid + 1; i <= end; i++)
+		{
+			sum = sum + array[i];
+			if (sum > rightSum)
+			{
+				rightSum = sum;
+				rightLocation = i;
+			}
+		}
+
+		return new MaxInfo(leftLocation, rightLocation, leftSum + rightSum);
+	}
+}

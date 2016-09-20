@@ -1,0 +1,13 @@
+package command_pattern;
+
+public class LightOnCommand implements Command
+{
+Light light;
+	@Override
+	public void execute()
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

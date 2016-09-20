@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="/home/berry/develop/apache-tomcat-7.0.63/lib/servlet-api.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="/home/berry/develop/apache-tomcat-7.0.63/apache-tomcat-7.0.63-src"/>
+  <source-attachment entry="/home/berry/develop/apache-tomcat-7.0.63/lib/catalina.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="/home/berry/develop/apache-tomcat-7.0.63/apache-tomcat-7.0.63-src"/>
+  <source-attachment entry="/home/berry/develop/apache-tomcat-7.0.63/lib/tomcat-coyote.jar" runtime-id="Apache Tomcat v7.0" source-attachment-path="/home/berry/develop/apache-tomcat-7.0.63/apache-tomcat-7.0.63-src"/>
+</classpath>

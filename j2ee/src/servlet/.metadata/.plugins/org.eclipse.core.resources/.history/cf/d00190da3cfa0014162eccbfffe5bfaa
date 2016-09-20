@@ -1,0 +1,14 @@
+package duck;
+public class MallardDuck extends Duck
+{
+	MallardDuck()
+	{
+		
+	}
+	@Override
+	public void display()
+	{
+System.out.println("I'am real a mallard duck");
+	}
+
+}

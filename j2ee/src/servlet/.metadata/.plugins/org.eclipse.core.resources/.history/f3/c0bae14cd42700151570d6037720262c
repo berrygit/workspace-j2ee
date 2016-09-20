@@ -1,0 +1,17 @@
+package structural.bridge;
+
+public class BridgeDriver
+{
+	public static void main(String[] args)
+	{
+		XWindowImp xWindowImp = new XWindowImp();
+		PMWindowImp pmWindowImp = new PMWindowImp();
+
+		Window xIcon = new IconWindow(xWindowImp);
+		Window pmIcon = new IconWindow(pmWindowImp);
+
+		Window xTran = new TransientWindow(xWindowImp);
+		Window pmIcon = new TransientWindow(pmWindowImp);
+
+	}
+}

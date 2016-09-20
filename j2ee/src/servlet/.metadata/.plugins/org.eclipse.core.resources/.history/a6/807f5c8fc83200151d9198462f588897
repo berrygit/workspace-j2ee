@@ -1,0 +1,67 @@
+package action;
+
+import com.opensymphony.xwork2.ActionContext;
+
+public class LoginAction
+{
+
+	/**
+	 * 用户名
+	 */
+	private String userName;
+
+	/**
+	 * 密码
+	 */
+	private String passWord;
+
+	public String execute()
+	{
+		if ((null != userName) && userName.equals(this.passWord))
+		{
+			ActionContext.getContext().getSession().put("userName", userName);
+			ActionContext.getContext().getSession().put("passWord", passWord);
+			
+			return "success";
+		}
+		else
+		{
+			return "fail";
+		}
+	}
+
+	/**
+	 * @return the passWord
+	 */
+	public String getPassWord()
+	{
+		return passWord;
+	}
+
+	/**
+	 * @param passWord
+	 *            the passWord to set
+	 */
+	public void setPassWord(String passWord)
+	{
+		this.passWord = passWord;
+	}
+
+	/**
+	 * @return the userName
+	 */
+	public String getUserName()
+	{
+		return userName;
+	}
+
+	/**
+	 * @param userName
+	 *            the userName to set
+	 */
+	public void setUserName(String userName)
+	{
+		this.userName = userName;
+	}
+
+}

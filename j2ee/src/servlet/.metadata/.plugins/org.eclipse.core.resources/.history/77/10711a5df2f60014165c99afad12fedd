@@ -1,0 +1,11 @@
+package maximum_subarray;
+
+public class MaxInfo
+{
+	private int max_left;
+	
+	private int max_right;
+	
+	private int max_sum;
+
+}

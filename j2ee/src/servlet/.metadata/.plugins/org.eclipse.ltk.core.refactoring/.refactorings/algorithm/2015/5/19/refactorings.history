@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;algorithm/src/sort&apos;&#x0A;- Original project: &apos;algorithm&apos;&#x0A;- Destination element: &apos;algorithm/src/sort&apos;&#x0A;- Original elements:&#x0A;     Merge_sort.java&#x0A;     Bubble_sort.java&#x0A;     Insertion_sort.java&#x0A;     Selection_sort.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;sort" element1="/src&lt;{Merge_sort.java" element2="/src&lt;{Bubble_sort.java" element3="/src&lt;{Insertion_sort.java" element4="/src&lt;{Selection_sort.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1431158872506" units="4" version="1.0"/>
+</session>

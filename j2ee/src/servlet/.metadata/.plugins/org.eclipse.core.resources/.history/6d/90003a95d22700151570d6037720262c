@@ -1,0 +1,10 @@
+package structural.bridge;
+
+public class Window
+{
+	WindowImp imp = null;
+
+	public void drawText();
+
+	public void drawRect();
+}

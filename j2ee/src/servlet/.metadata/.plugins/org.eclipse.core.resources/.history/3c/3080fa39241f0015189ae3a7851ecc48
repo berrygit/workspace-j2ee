@@ -1,0 +1,8 @@
+package creational.abstract_factory;
+
+public class Room
+{
+	private int _roomNumber;
+
+
+}

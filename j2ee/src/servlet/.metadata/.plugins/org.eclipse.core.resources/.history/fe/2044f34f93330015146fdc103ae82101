@@ -1,0 +1,75 @@
+package servlet;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class TestServlet extends HttpServlet
+{
+
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException
+	{
+		System.out.println("...doGet(req, resp)...");
+		doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException
+	{
+		InputStream in = req.getInputStream();
+
+		while (in.available() != 0)
+		{
+			System.out.print(in.read());
+		}
+
+		int count = 0;
+		while (in.available() == 0)
+		{
+			count = in.available();
+		}
+
+		byte[] b = new byte[count];
+		in.read(b);
+		
+		for(byte b:b)
+	}
+
+	protected void printRequestInfo(HttpServletRequest req)
+	{
+		Method[] method = req.getClass().getMethods();
+
+		for (Method m : method)
+		{
+			if ((m.getParameterTypes().length == 0)
+					&& (m.getReturnType() != null))
+			{
+				System.out.println(m.getName());
+				try
+				{
+					System.out.println(m.invoke(req, (Object[]) null));
+				}
+				catch (IllegalAccessException | IllegalArgumentException
+						| InvocationTargetException e)
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println();
+			}
+
+		}
+
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;more.profiler.Primer&apos; to &apos;Prime&apos;&#x0A;- Original project: &apos;programming_pearls&apos;&#x0A;- Original element: &apos;more.profiler.Primer&apos;&#x0A;- Renamed element: &apos;more.profiler.Prime&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Primer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;more.profiler{Primer.java[Primer" matchStrategy="1" name="Prime" qualified="false" references="true" similarDeclarations="false" stamp="1434592338296" textual="false" version="1.0"/>
+</session>

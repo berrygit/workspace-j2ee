@@ -1,0 +1,89 @@
+package maze;
+
+import java.awt.Point;
+
+public class MazeWithRecursion
+{
+	int[][] maze =
+	{
+	{ 1, 1, 1, 1, 1 },
+	{ 0, 0, 1, 1, 1 },
+	{ 1, 0, 0, 0, 1 },
+	{ 1, 0, 1, 0, 0 },
+	{ 1, 1, 1, 1, 1 } };
+
+	static int[][] visited = new int[5][5];
+	static int[][] path = new int[5][5];
+
+	public static void main(String[] args)
+	{
+		initial(visited);
+		initial(path);
+
+	}
+
+	private static void initial(int[][] array)
+	{
+		for (int[] is : array)
+		{
+			for (int i : is)
+			{
+				is[i] = 0;
+			}
+		}
+	}
+
+	private static boolean passTheMaze(int[][] maze, Point p)
+	{
+		if (visited(p))
+		{
+			return false;
+		}
+
+		if (isExist(p))
+		{
+			return true;
+		}
+
+		if (moveLeft(p))
+		{
+			if (passTheMaze(maze, p))
+			{
+				return true;
+			}
+		}
+
+		if (moveUp(p))
+		{
+			if (passTheMaze(maze, p))
+			{
+				return true;
+			}
+		}
+
+		if (moveRight(p))
+		{
+			if (passTheMaze(maze, p))
+			{
+				return true;
+			}
+		}
+
+		if (moveDown(p))
+		{
+			if (passTheMaze(maze, p))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	private static boolean visited(Point p)
+	{
+
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

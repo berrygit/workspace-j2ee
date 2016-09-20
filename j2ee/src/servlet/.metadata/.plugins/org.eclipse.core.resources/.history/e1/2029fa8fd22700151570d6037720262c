@@ -1,0 +1,8 @@
+package structural.bridge;
+
+public class Window
+{
+	public void drawText();
+
+	public void drawRect();
+}

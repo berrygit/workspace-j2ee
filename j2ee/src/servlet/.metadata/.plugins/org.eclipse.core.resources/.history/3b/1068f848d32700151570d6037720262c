@@ -1,0 +1,40 @@
+package structural.bridge;
+
+public class IconWindow extends Window
+{
+
+	public IconWindow(WindowImp imp)
+	{
+		super(imp);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see structural.bridge.Window#drawText()
+	 */
+	@Override
+	public void drawText()
+	{
+		// TODO Auto-generated method stub
+		super.drawText();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see structural.bridge.Window#drawRect()
+	 */
+	@Override
+	public void drawRect()
+	{
+		// TODO Auto-generated method stub
+		super.drawRect();
+	}
+
+	public void drawBorder()
+	{
+		drawText();
+	}
+
+}

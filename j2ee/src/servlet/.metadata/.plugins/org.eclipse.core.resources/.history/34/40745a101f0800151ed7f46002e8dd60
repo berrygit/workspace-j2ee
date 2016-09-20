@@ -1,0 +1,31 @@
+package maze;
+
+public class MazeWithRecursion
+{
+	int[][] maze =
+	{
+	{ 1, 1, 1, 1, 1 },
+	{ 0, 0, 1, 1, 1 },
+	{ 1, 0, 0, 0, 1 },
+	{ 1, 0, 1, 0, 0 },
+	{ 1, 1, 1, 1, 1 } };
+
+	int[][] visited = new int[5][5];
+	int[][] path = new int[5][5];
+
+	public static void main(String[] args)
+	{
+
+	}
+
+	private void initial(int[][] array)
+	{
+		for (int[] is : array)
+		{
+			for (int i : is)
+			{
+				is[i] = 0;
+			}
+		}
+	}
+}

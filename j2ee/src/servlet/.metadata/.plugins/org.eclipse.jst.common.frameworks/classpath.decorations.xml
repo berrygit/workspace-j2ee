@@ -1,0 +1,7 @@
+<classpath>
+  <container id="project!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/home/berry/develop/workspace/project/WebContent/WEB-INF/lib/xwork-core-2.3.24.jar">
+      <source-attachment-path>/home/berry/develop/struts-2.3.24/src/xwork-core</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

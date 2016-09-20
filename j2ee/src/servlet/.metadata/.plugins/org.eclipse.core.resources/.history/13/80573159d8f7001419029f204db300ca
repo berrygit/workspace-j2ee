@@ -1,0 +1,42 @@
+package sort;
+
+public class Quick_sort
+{
+	static int[] numbers =
+	{ 17, 63, 43, 64, 58, 54, 97, 65, 7, 2, 65, 67, 95, 34, 5, 976, 465, 35,
+			34, 64, 34, 643, 15, 23, 1, 46, 32, 35, 345, 23, 9, 4, 62, 234, 77 };
+
+	public static void main(String[] args)
+	{
+		sort(numbers, 0, numbers.length - 1);
+
+		for (int i = 0; i < numbers.length; i++)
+		{
+			System.out.print(numbers[i] + " , ");
+		}
+	}
+
+	private static void sort(int[] numbers, int begin, int end)
+	{
+		if (begin < end)
+		{
+			int pivot = partition(numbers, begin, end);
+			sort(numbers, begin, pivot - 1);
+			sort(numbers, pivot + 1, end);
+		}
+	}
+
+	private static int partition(int[] numbers, int begin, int end)
+	{
+		int x = numbers[end];
+		
+		for (int i = 0; i < numbers.length-1; i++)
+		{
+			if(numbers[i] <= x)
+			{
+				
+			}
+		}
+		return 0;
+	}
+}

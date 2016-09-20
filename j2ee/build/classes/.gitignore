@@ -1,0 +1,11 @@
+/action/
+/freemarker/
+/hibernate/
+/https/
+/interceptor/
+/jdbc/
+/servlet/
+/spring/
+/struts.xml
+/tools/
+/xml/

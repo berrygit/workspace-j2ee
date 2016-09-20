@@ -1,0 +1,8 @@
+package filter;
+
+import javax.servlet.Filter;
+
+public class SecurityFilter implements Filter
+{
+
+}

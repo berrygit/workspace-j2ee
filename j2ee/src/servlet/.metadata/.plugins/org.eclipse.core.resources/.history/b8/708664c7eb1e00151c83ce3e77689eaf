@@ -1,0 +1,24 @@
+package tools;
+
+import java.util.Random;
+
+public class RandomNumbers
+{
+	/**
+	 * generate随机数字数组发生器，范围在入参scope内
+	 *
+	 * @return 含随机数长度为number的数组
+	 */
+	public static int[] generate(int scope)
+	{
+		int[] numbers = new int[scope];
+
+		for (int i = 0; i < numbers.length; i++)
+		{
+			// 产生scope范围内的随机数
+			numbers[i] = new Random().nextInt(scope);
+		}
+
+		return numbers;
+	}
+}

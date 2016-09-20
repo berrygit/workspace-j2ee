@@ -1,0 +1,66 @@
+package maximum_subarray;
+
+public class MaxInfo
+{
+	private int max_left;
+	
+	private int max_right;
+	
+	private int max_sum;
+	
+	public MaxInfo(int left,int right,int sum)
+	{
+		max_left = left;
+		max_right= right;
+		max_sum=sum;
+	}
+
+	/**
+	 * @return the max_left
+	 */
+	public int getMax_left()
+	{
+		return max_left;
+	}
+
+	/**
+	 * @param max_left the max_left to set
+	 */
+	public void setMax_left(int max_left)
+	{
+		this.max_left = max_left;
+	}
+
+	/**
+	 * @return the max_right
+	 */
+	public int getMax_right()
+	{
+		return max_right;
+	}
+
+	/**
+	 * @param max_right the max_right to set
+	 */
+	public void setMax_right(int max_right)
+	{
+		this.max_right = max_right;
+	}
+
+	/**
+	 * @return the max_sum
+	 */
+	public int getMax_sum()
+	{
+		return max_sum;
+	}
+
+	/**
+	 * @param max_sum the max_sum to set
+	 */
+	public void setMax_sum(int max_sum)
+	{
+		this.max_sum = max_sum;
+	}
+
+}

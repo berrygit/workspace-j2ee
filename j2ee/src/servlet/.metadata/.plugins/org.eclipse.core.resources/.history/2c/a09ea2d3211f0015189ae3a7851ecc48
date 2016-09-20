@@ -1,0 +1,12 @@
+package creational.abstract_factory;
+
+public class MazeFactory
+{
+	Maze makeMaze();
+
+	Wall makeWall();
+
+	Room makeRoom();
+
+	Door makeDoor();
+}

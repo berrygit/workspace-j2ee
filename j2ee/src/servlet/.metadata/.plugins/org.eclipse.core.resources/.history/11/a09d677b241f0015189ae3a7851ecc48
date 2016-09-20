@@ -1,0 +1,9 @@
+package creational.abstract_factory;
+
+public class Wall
+{
+	private Room _room1;
+	private Room _room2;
+	private boolean _isOpen;
+	
+}

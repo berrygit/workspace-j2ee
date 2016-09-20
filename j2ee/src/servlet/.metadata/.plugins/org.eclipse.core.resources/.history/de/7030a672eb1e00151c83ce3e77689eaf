@@ -1,0 +1,24 @@
+package tools;
+
+import java.util.Random;
+
+public class RandomNumbers
+{
+	/**
+	 * generate随机数字数组发生器，范围在入参number内
+	 *
+	 * @return 含随机数长度为number的数组
+	 */
+	public static int[] generate(int number)
+	{
+		int[] numbers = new int[number];
+
+		for (int i = 0; i < numbers.length; i++)
+		{
+			// 产生随机数
+			numbers[i] = new Random().nextInt(number);
+		}
+
+		return numbers;
+	}
+}

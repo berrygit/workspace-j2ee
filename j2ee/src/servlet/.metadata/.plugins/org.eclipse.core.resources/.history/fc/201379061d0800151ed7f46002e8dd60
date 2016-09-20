@@ -1,0 +1,6 @@
+package maze;
+
+public class MazeWithRecursion
+{
+	int[][] maze = { { 1, 1, 1, 1, 1 }, { 0, }, {}, {}, {} };
+}

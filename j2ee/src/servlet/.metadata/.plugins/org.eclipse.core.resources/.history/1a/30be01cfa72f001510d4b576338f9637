@@ -1,0 +1,17 @@
+package behavioral.command;
+
+import javax.xml.ws.spi.Invoker;
+
+public class Client
+{
+	RemoteInvoker invoker = new RemoteInvoker();
+	
+
+	Light light1 = new Light();
+	Light light2 = new Light();
+
+	LightOffCommand offCommand = new LightOffCommand(light1);
+	LightOnCommand onCommand = new LightOnCommand(light2);
+
+	invoker.setCommand
+}

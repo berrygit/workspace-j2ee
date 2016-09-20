@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class NodeTest
+{
+	public static void main(String[] args)
+	{
+		while (true)
+		{
+			System.out.print(new Random().nextInt(2) + " ");
+		}
+	}
+}

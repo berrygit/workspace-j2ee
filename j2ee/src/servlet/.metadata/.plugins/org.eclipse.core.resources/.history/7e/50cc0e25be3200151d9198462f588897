@@ -1,0 +1,44 @@
+package action;
+
+public class LoginAction
+{
+
+	/**
+	 * 用户名
+	 */
+	private String userame;
+
+	/**
+	 * 密码
+	 */
+	private String passWord;
+
+	public String execute()
+	{
+		if ((null != username) && username.equals(this.passWord))
+		{
+			return "success";
+		}
+		else
+		{
+			return "fail";
+		}
+	}
+
+	/**
+	 * @return the passWord
+	 */
+	public String getPassWord()
+	{
+		return passWord;
+	}
+
+	/**
+	 * @param passWord
+	 *            the passWord to set
+	 */
+	public void setPassWord(String passWord)
+	{
+		this.passWord = passWord;
+	}
+}

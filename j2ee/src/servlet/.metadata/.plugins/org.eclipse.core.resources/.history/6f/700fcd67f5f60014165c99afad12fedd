@@ -1,0 +1,59 @@
+package maximum_subarray;
+
+public class Maximum_subarray
+{
+	private MaxInfo findMaximumSubarray(int[] array, int begin, int end)
+	{
+		if (end == begin)
+		{
+			return new MaxInfo(begin, end, array[begin]);
+		}
+		else
+		{
+			int mid = (begin + end) / 2;
+			MaxInfo leftMax = findMaximumSubarray(array, begin, mid);
+			MaxInfo rightMax = findMaximumSubarray(array, mid + 1, end);
+			MaxInfo crossMax = findMaximumCrossSubarray(array, begin, mid, end);
+
+			if (leftMax.getMax_sum() >= rightMax.getMax_sum()
+					&& leftMax.getMax_sum() >= crossMax.getMax_sum())
+			{
+				return leftMax;
+			}
+			else if (rightMax.getMax_sum() >= leftMax.getMax_sum()
+					&& rightMax.getMax_sum() >= crossMax.getMax_sum())
+			{
+				return rightMax;
+			}
+			else
+			{
+				return crossMax;
+			}
+		}
+
+	}
+
+	private MaxInfo findMaximumCrossSubarray(int[] array, int begin, int mid,
+			int end)
+	{
+		int leftSum = Integer.MIN_VALUE;
+		int leftLocation = mid;
+		int sum = 0;
+
+		for (int i = mid; i >= begin; i--)
+		{
+			sum = sum + array[i];
+			if (sum > leftSum)
+			{
+				leftSum = sum;
+				leftLocation = i;
+			}
+		}
+
+		int rightSum = Integer.MIN_VALUE;
+		int rightLocation = mid;
+		int sum = 0;
+		
+		return null;
+	}
+}

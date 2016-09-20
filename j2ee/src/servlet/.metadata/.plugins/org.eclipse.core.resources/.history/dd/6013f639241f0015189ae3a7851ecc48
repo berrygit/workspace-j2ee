@@ -1,0 +1,12 @@
+package creational.abstract_factory;
+
+public class Room
+{
+	private int _roomNumber;
+
+	public Room(int _roomNumber)
+	{
+		this._roomNumber = _roomNumber;
+	}
+
+}

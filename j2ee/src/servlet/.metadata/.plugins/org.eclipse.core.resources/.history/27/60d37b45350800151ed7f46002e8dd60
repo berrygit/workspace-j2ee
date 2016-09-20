@@ -1,0 +1,201 @@
+package maze;
+
+public class MazeWithRecursion
+{
+	static int[][] maze =
+	{
+	{ 1, 1, 1, 1, 1 },
+	{ 0, 0, 1, 1, 1 },
+	{ 1, 0, 0, 0, 1 },
+	{ 1, 0, 1, 0, 0 },
+	{ 1, 1, 1, 1, 1 } };
+
+	static int[][] visited = new int[5][5];
+	static int[][] path = new int[5][5];
+
+	public static void main(String[] args)
+	{
+		initial(visited);
+		initial(path);
+
+		Point p = new Point();
+		p.setX(1);
+		p.setY(0);
+		passTheMaze(p);
+
+	}
+
+	private void setVisited(Point p)
+	{
+		visited[p.getX()][p.getY()] = 1;
+	}
+
+	private static void initial(int[][] array)
+	{
+		for (int[] is : array)
+		{
+			for (int i : is)
+			{
+				is[i] = 0;
+			}
+		}
+	}
+
+	private static boolean passTheMaze(Point p)
+	{
+		if (visited(p))
+		{
+			return false;
+		}
+
+		if (isExit(p))
+		{
+			return true;
+		}
+
+		if (moveLeftable(p))
+		{
+			if (passTheMaze(p))
+			{
+				return true;
+			}
+		}
+
+		if (moveUpable(p))
+		{
+			if (passTheMaze(p))
+			{
+				return true;
+			}
+		}
+
+		if (moveRightable(p))
+		{
+			if (passTheMaze(p))
+			{
+				return true;
+			}
+		}
+
+		if (moveDownable(p))
+		{
+			if (passTheMaze(p))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	private static boolean moveLeftable(Point p)
+	{
+		p.setY(p.getY() - 1);
+
+		if (getOutBound(p) || isWall(p))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+	private static boolean moveUpable(Point p)
+	{
+		Point temp = p.clone();
+		temp.setX(temp.getX() - 1);
+
+		if (getOutBound(temp) || isWall(temp))
+		{
+			return false;
+		}
+		else
+		{
+			p = temp;
+			return true;
+		}
+	}
+
+	private static boolean moveRightable(Point p)
+	{
+		Point temp = p.clone();
+		temp.setX(temp.getX() - 1);
+
+		if (getOutBound(temp) || isWall(temp))
+		{
+			return false;
+		}
+		else
+		{
+			p = temp;
+			return true;
+		}
+	}
+
+	private static boolean moveDownable(Point p)
+	{
+		Point temp = p.clone();
+		temp.setX(temp.getX() - 1);
+
+		if (getOutBound(temp) || isWall(temp))
+		{
+			return false;
+		}
+		else
+		{
+			p = temp;
+			return true;
+		}
+	}
+
+	private static boolean isWall(Point p)
+	{
+		if (1 == maze[p.getX()][p.getY()])
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	private static boolean isExit(Point p)
+	{
+		if (((maze.length - 2) == p.getX()) && ((maze.length - 1) == p.getY()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	private static boolean visited(Point p)
+	{
+		if (1 == maze[p.getX()][p.getY()])
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	private static boolean getOutBound(Point p)
+	{
+		if (((0 <= p.getX()) && (p.getX() < maze.length))
+				&& ((0 <= p.getY()) && (p.getY() < maze.length)))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+}

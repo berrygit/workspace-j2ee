@@ -1,0 +1,19 @@
+package maximum_subarray;
+
+public class Maximum_subarray
+{
+	private MaxInfo findMaximumSubarray(int[] array, int begin, int end)
+	{
+		if (end == begin)
+		{
+			return new MaxInfo(begin, end, array[begin]);
+		}
+		else
+		{	
+			int mid = (begin + end)/2;
+			MaxInfo leftMax = findMaximumSubarray(array, begin, mid);
+			MaxInfo rightMax = findMaximumSubarray(array, mid+1, end);
+		}
+
+	}
+}

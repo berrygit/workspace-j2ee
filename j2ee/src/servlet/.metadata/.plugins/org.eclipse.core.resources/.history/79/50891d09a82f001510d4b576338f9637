@@ -1,0 +1,15 @@
+package behavioral.command;
+
+public class Client
+{
+	Light light1 = new Light();
+	Light light2 = new Light();
+	
+	light1
+
+	LightOffCommand offCommand = new LightOffCommand(light1);
+	LightOnCommand onCommand = new LightOnCommand(light2);
+
+	RemoteInvoker invoker = new RemoteInvoker();
+
+}

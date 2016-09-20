@@ -1,0 +1,37 @@
+package interceptor;
+
+import java.util.Map;
+
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionInvocation;
+import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
+
+public class LoginInterceptor extends AbstractInterceptor
+{
+
+	private static final long serialVersionUID = 1L;
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * com.opensymphony.xwork2.interceptor.AbstractInterceptor#intercept(com
+	 * .opensymphony.xwork2.ActionInvocation)
+	 */
+	@Override
+	public String intercept(ActionInvocation invocation) throws Exception
+	{
+		// 取得请求相关的ActionContext实例
+		ActionContext ctx = invocation.getInvocationContext();
+		Map<String, Object> session = ctx.getSession();
+		String user = (String) session.get("userName");
+
+		if ((user != null)&&)
+		{
+			return "login";
+		}
+
+		return invocation.invoke();
+
+	}
+}
